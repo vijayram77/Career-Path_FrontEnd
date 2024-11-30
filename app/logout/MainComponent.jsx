@@ -10,12 +10,7 @@ const MainComponent = ({baseUrl}) => {
     
     const post = async () => {
       try {
-        const res = await axios.get( `${baseUrl}/logout` , {
-          withCredentials : true
-        })  
-        console.log(res);
-        
-        localStorage.setItem("userData", "");
+        localStorage.setItem("token", "");
         window.location.href ="/"
       } catch (error) {
         alert(error.message)

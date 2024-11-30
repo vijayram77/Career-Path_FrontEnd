@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const baseUrl = process.env.BASE_URL
   
   
   return (
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         
-        <Navbar />
+        <Navbar BASE_URL={baseUrl} />
         {children}
       </body>
     </html>

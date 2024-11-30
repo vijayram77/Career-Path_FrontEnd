@@ -4,19 +4,23 @@ import Link from 'next/link'
 import { space } from 'postcss/lib/list'
 import React, { useEffect, useRef, useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({BASE_URL}) => {
     const [username, setUsername] = useState()
     const [logoutToggle, setlogoutToggle] = useState(false)
     useEffect(() => {
         const posttest = async () => {
+            const token = localStorage.getItem("token");
+            console.log(token );
+            // console.log(BASE_URL);
+            
             try{
-              const res = await axios.get("http://localhost:4000/loggedin/",{
-                withCredentials : true
-              
-              });
+                const res = await axios.post(`${BASE_URL}/loggedin`, {token : localStorage.getItem("token") } , {
+                    withCredentials : true
+                }) 
               console.log(res);
               if(res){
                 setUsername(u => res.data.name)
+                
               }
               
             }

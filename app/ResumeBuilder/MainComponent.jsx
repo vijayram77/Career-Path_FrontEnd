@@ -9,11 +9,9 @@ const MainComponent = ({baseUrl}) => {
     
     useEffect(() => {
         const posttest = async () => {
+            const token = localStorage.getItem("token");
             try{
-              const res = await axios.get("http://localhost:4000/loggedin/",{
-                withCredentials : true
-              
-              });
+              const res = await axios.post(`${baseUrl}/loggedin`,{token : token});
               console.log(res);
               if(res){
                 setToggle(true)

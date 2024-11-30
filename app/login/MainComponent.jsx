@@ -33,14 +33,15 @@ const MainComponent = ({baseUrl}) => {
             const res = await axios.post(`${baseUrl}/login`, formData , {
                 withCredentials : true
             })  
-            if(res.status == 200 ){
-                alert("Logged In Successfully!");
-                console.log(res.data);
+            if(res){
+                setuserdata({name : res.data.name , email : res.data.email})
+                console.log({name : res.data.name , email : res.data.email});
                 
-                setuserdata(res.data)
-                localStorage.setItem("userData", JSON.stringify(res.data))
+                localStorage.setItem("token", res.data.localCookie)
+                localStorage.setItem("name", res.data.name)
+                localStorage.setItem("email", res.data.email)
                 window.location.href = "/"
-            }            
+              }         
         }
         catch(e){
             e.status !== 200 && alert("Please Create an account and Login");
