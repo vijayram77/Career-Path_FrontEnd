@@ -9,9 +9,12 @@ const MainComponent = ({baseUrl}) => {
     
     useEffect(() => {
         const posttest = async () => {
-            const token = localStorage.getItem("token");
+            var token = localStorage.getItem("token");
+            setFormData({ ...formData, token: token });
             try{
-              const res = await axios.post(`${baseUrl}/loggedin`,{token : token});
+              const res = await axios.post(`${baseUrl}/loggedin`,{token : token},{
+                withCredentials : true
+            });
               console.log(res);
               if(res){
                 setToggle(true)
@@ -27,6 +30,7 @@ const MainComponent = ({baseUrl}) => {
 
     
     const [formData, setFormData] = useState({
+        token : '',
         fullName: '',
         email: '',
         linkedinUrl: '',
