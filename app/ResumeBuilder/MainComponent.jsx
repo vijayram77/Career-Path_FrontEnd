@@ -138,7 +138,7 @@ const MainComponent = ({baseUrl}) => {
                 <div className='w-3 sm:h-[6vmax] h-[15vmax] bg-[#1e9eff] rounded-sm'></div>
                 <h1 className='text-[6vmax] font-semibold text-[#cccccc] relative tracking-tighter'>Resume Builder (Beta)</h1>
             </div>
-            <h1 className='md:text-2xl text-xl text-[#ccccccb2] relative tracking-tighter py-4'>Let's create an ATS friendly resume, together.</h1>
+            <h1 className='md:text-2xl text-xl text-[#ccccccb2] relative tracking-tighter py-4'>Currently We Haven't Deployed The Full Fledged Version Of Our Project , Due To This There Might Be Some Error For The Resume Building . Please Stay Tuned For Further Updates .</h1>
 
 
             <div className="max-w-xl mr-auto p-8 relative">
@@ -398,6 +398,7 @@ const MainComponent = ({baseUrl}) => {
                     </div>
                 </form>
             </div>
+            <h1 className='md:text-2xl text-xl text-[#ccccccb2] relative tracking-tighter py-4'>Currently We Haven't Deployed The Full Fledged Version Of Our Project . Please Stay Tuned For Further Updates .</h1>
 
 
                 </div>
