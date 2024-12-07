@@ -62,48 +62,48 @@ const page = () => {
         .to(ref.current , {
             x : "-400%"
         })
-        // .to(".vijayname", {
-        //     top : 0
-        // }, "vijay")
-        // .to(".vijayimage", {
-        //     opacity : 1
-        // }, "vijay")
-        // .to(".sureshname", {
-        //     top : 0
-        // }, "suresh")
-        // .to(".sureshimage", {
-        //     opacity : 1
-        // }, "suresh")
-        // .to(ref.current , {
-        //     x : "-500%"
-        // })
+        .to(".vijayname", {
+            top : 0
+        }, "vijay")
+        .to(".vijayimage", {
+            opacity : 1
+        }, "vijay")
+        .to(".sureshname", {
+            top : 0
+        }, "suresh")
+        .to(".sureshimage", {
+            opacity : 1
+        }, "suresh")
+        .to(ref.current , {
+            x : "-500%"
+        })
         .to(".jayaname", {
             top : 0
         }, "jaya")
         .to(".jayaimage", {
             opacity : 1
         }, "jaya")
-        // .to(ref.current , {
-        //     x : "-600%"
-        // })
-        // .to(".hemaname", {
-        //     top : 0
-        // }, "hema")
-        // .to(".hemaimage", {
-        //     opacity : 1
-        // }, "hema")
-        // .to(ref.current , {
-        //     x : "-700%"
-        // })
-        // .to(".preetiname", {
-        //     top : 0
-        // }, "preeti")
-        // .to(".preetiimage", {
-        //     opacity : 1
-        // }, "preeti")
-        // .to(ref.current , {
-        //     x : "-800%"
-        // })
+        .to(ref.current , {
+            x : "-600%"
+        })
+        .to(".hemaname", {
+            top : 0
+        }, "hema")
+        .to(".hemaimage", {
+            opacity : 1
+        }, "hema")
+        .to(ref.current , {
+            x : "-700%"
+        })
+        .to(".preetiname", {
+            top : 0
+        }, "preeti")
+        .to(".preetiimage", {
+            opacity : 1
+        }, "preeti")
+        .to(ref.current , {
+            x : "-800%"
+        })
         
     })
     return (
@@ -153,20 +153,20 @@ const page = () => {
 
                     </div>
                 </div>
-                {/* <div className='min-w-full h-full px-6 items-center flex flex-col justify-center relative'>
+                <div className='min-w-full h-full px-6 items-center flex flex-col justify-center relative'>
                     <Image src={vijay} className='md:w-1/3 rounded-full absolute top-1/2 left-1/2 opacity-0 vijayimage -translate-x-1/2 -translate-y-1/2' />
                     <div className='overflow-hidden'>
                     <h1 className='text-zinc-300 font-[Neue] font-bold  relative text-[8vmax] tracking-tighter vijayname top-[300px]  capitalize text-center  '>Vijay Ram</h1>
 
                     </div>
-                </div> */}
-                {/* <div className='min-w-full h-[400px] top-1/2 -translate-y-1/2 px-6 items-center flex flex-col justify-center py-24 relative'>
+                </div>
+                <div className='min-w-full h-[400px] top-1/2 -translate-y-1/2 px-6 items-center flex flex-col justify-center py-24 relative'>
                     <Image src={suresh} className='md:w-1/3 md:h-[500px] h-[300px] rounded-full absolute top-1/2 left-1/2 opacity-0 sureshimage object-contain -translate-x-1/2 -translate-y-1/2' />
                     <div className='overflow-hidden'>
                             <h1 className='text-zinc-300 font-[Neue] font-bold  relative text-[8vmax] tracking-tighter sureshname top-[300px]   capitalize text-center  '>Suresh</h1>
 
                     </div>
-                </div> */}
+                </div>
                 <div className='min-w-full h-full px-6 items-center flex flex-col justify-center relative'>
                     <img src={jaya.src} className='md:w-1/3 rounded-full absolute top-1/2 left-1/2 opacity-0 jayaimage -translate-x-1/2 -translate-y-1/2' />
                     <div className='overflow-hidden'>
@@ -174,7 +174,7 @@ const page = () => {
 
                     </div>
                 </div>
-                {/* <div className='min-w-full h-full px-6 items-center flex flex-col justify-center relative'>
+                <div className='min-w-full h-full px-6 items-center flex flex-col justify-center relative'>
                     <Image src={hema} className='md:w-1/3 rounded-full absolute top-1/2 left-1/2 opacity-0 hemaimage -translate-x-1/2 -translate-y-1/2' />
                     <div className='overflow-hidden'>
                     <h1 className='text-zinc-300 font-[Neue] font-bold  relative text-[8vmax] tracking-tighter hemaname top-[300px]  capitalize text-center  '>Hemanjali</h1>
@@ -187,7 +187,7 @@ const page = () => {
                     <h1 className='text-zinc-300 font-[Neue] font-bold  relative text-[8vmax] tracking-tighter preetiname top-[300px]  capitalize text-center  '>Preeti</h1>
 
                     </div>
-                </div> */}
+                </div>
                 
             </div>
             </div>
