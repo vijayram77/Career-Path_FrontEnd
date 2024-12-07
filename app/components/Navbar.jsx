@@ -56,7 +56,7 @@ const Navbar = ({BASE_URL}) => {
             <div className=' items-center gap-12 hidden xl:flex'>
                 {
                     ["Home", "RoadMaps", "Community", "Resume Builder", "Interview", "About Us"].map((item, i) => {
-                        return <Link key={i} href={`/${item == "Home" ? "" : item == "Resume Builder" ? "ResumeBuilder" : item == "About Us" ? "About" : item}`} className='inline-block text-zinc-300 capitalize font-[500] tracking-tighter text-[16px]'>{item}</Link>
+                        return <Link key={i} href={`/${item == "Home" ? "" : item == "Resume Builder" ? "ResumeBuilder" : item == "About Us" ? "About" : item}`} className='inline-block text-zinc-400 capitalize font-[500] tracking-tighter text-[16px]'>{item}</Link>
                     })
                 }
             </div>

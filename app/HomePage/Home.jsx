@@ -80,7 +80,7 @@ const Home = () => {
             </div>
             <div className='w-full justify-center md:justify-between px-[5vw] text-zinc-300 font-semibold md:text-[5vw] text-4xl flex flex-col tracking-tighter uppercase gap-12'>
                 <motion.div initial={{ x: -700 }} animate={{ x: 0 }} transition={{ duration: 2, ease: easeInOut }} className='flex w-full items-center justify-start select-none'>
-                    <h1 ref={ref1} className='tracking-tighter font-[Neue]'>UNLOCKING THE PATH</h1>
+                    <h1 ref={ref1} className='tracking-tighter font-[Neue]'>UNLOCKING THE RoadMap</h1>
                 </motion.div>
                 <motion.div initial={{ x: 700 }} animate={{ x: 0 }} transition={{ duration: 2, ease: easeInOut }} className='flex w-full items-center justify-end '>
                     <h1 ref={ref2} className='tracking-tighter select-none font-[Neue] h2'>

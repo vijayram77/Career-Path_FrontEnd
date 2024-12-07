@@ -50,7 +50,7 @@ const RMDomains = () => {
     return (
         <div className='relative parent domain w-full min-h-screen overflow-hidden bg-inc-950 pt-[14vh] px-[7.5vw]'>
             {[...Array(10)].map((_, index) => (
-                <div key={index} className={`absolute w-[1vmax] h-[1vmax] backdrop-blur-sm rounded-full bg-[#cccccc]`} style={{ top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%` }}></div>
+                <div key={index} className={`absolute w-[1vmax] h-[1vmax] blur-sm rounded-full bg-[#cccccc]`} style={{ top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%` }}></div>
             ))}
             <div ref={blobref} className='absolute w-[40vmax] h-[40vmax] rounded-full bg-gradient-to-br shadow-[-60px_-60px_10px_0px_#001678] from-[#32fcff] via-[#022bce] to-[#001678]  blur-xl'></div>
             <div className='absolute w-full h-full  '></div>

@@ -1,7 +1,5 @@
-import React  from 'react'
+import React from 'react'
 import MainComponent from './MainComponent';
-
-
 
 const Page = () => {
     
